@@ -156,8 +156,3 @@
 // }
 
 
-function a(){
-    console.log("hello, world")
-}
-setTimeout(a,2000)
-

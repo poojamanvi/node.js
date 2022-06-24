@@ -1,28 +1,3 @@
-// function x(num,facto){
-//     if(num>0){
-//         facto = facto*num;
-//         return x((num-1),facto);
-//     }
-//     return facto;
-
-// }
-// console.log(x(5,1))
-
-
-// function x(num1,num2,counter){
-    
-//     if(counter<10){
-        
-//         let c= num1+num2  
-          
-//         return x(num2,c,counter+1)
-//     }
-//     console.log(num1);
-       
-
-// }
-// x(1,1,1)
-
 
 // Question-1
 // print all number between the given range
@@ -61,7 +36,6 @@
 
 // Question-4
 // fibonacci series
-
 // function fibonacci(a,b,counter) {
 //      if(counter<10){
 //        let c= a+b
@@ -72,8 +46,8 @@
 // }
 // fibonacci(1,1,1)
 
-//  Question-6
-//  count the number of digit
+// //  Question-6
+// //  count the number of digit
 
 // function numberOfDigit(num,count) {
 //   if(num>0){
@@ -81,14 +55,12 @@
 //      num = Math.floor(num/10)
 //     return numberOfDigit(num,count)
 //   }
-//   console.log(count);
-  
-  
+//   console.log(count); 
 // }
 // numberOfDigit(12546,0)
 
 
-// 
+// Question-9
 // print all odd number from 1 to n
 
 // function oddNumber(num,count){
@@ -116,28 +88,28 @@
 // Question No-12
 // given a number n,find 2^n using recursion
 
-// function Power(num) {
-//      let x=  num**2
-//        console.log(x)
-// }
-// Power(5)
+function Power(num) {
+     let x=  num**2
+       console.log(x)
+}
+Power(5)
 
 
 // Question No-11
 // find the number is a palindromic
 
-function palindromic(num,reverse) {
-   if(num>0){
-       let reminder=num%10
-       num=Math.floor(num/10)
-       reverse=reverse*10+reminder
-       return palindromic(num,reverse)
+// function palindromic(num,reverse) {
+//    if(num>0){
+//        let reminder=num%10
+//        num=Math.floor(num/10)
+//        reverse=reverse*10+reminder
+//        return palindromic(num,reverse)
 
-   }
-    if (num=reverse){
-      console.log("Number is palindromic");
-    }else{
-      console.log("Number is not a palindromic");
-    }
-}
-palindromic(12321,0)
+//    }
+//     if (num=reverse){
+//       console.log("Number is palindromic");
+//     }else{
+//       console.log("Number is not a palindromic");
+//     }
+// }
+// palindromic(12321,0)
