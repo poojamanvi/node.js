@@ -97,6 +97,43 @@
 
 
 
+// function amPm(hr,min){
+//     if(hr==0){
+//      min= min<10 ? "0"+ min :min;
+//       // hr>10 ? '0'+hr : hr
+//      return(12+":"+min+" "+'AM')
+//     }
+//      else if(hr>=12){
+//       hr=hr-12
+//       min=min<10 ?"0"+min:min
+//       hr= hr<10 ?"0"+hr:hr
+//        if(hr==0){
+//          return(12+":"+min+" "+'PM')
+//        }else{
+//       return(hr+":"+min+" "+'PM')
+//     }
+//      }
+//     else{
+//          min = min<10 ?"0"+min:min
+//          hr =  hr<10 ?"0"+hr:hr
+//           return(hr+":"+min+" "+'AM')
+    
+//   }
+    
+//   }
+//   console.log(amPm(11,2))
+//   exports.amPm = amPm
+
+
+
+
+
+
+
+
+
+
+
 
 
 // Question-5
@@ -150,3 +187,109 @@
 
 
 // Question-6
+
+// function product(a,b){
+//     let  product=1
+//      let flag=false
+//     for(i=a; i<=b; i++){
+//            let number=Math.floor(i/10)
+//            let lastSecond=number%10
+         
+//            if(lastSecond==4 && i%2==0){
+//              flag=true
+//              product=product*i
+             
+             
+//            } 
+//    } 
+     
+//    if(flag){
+//      return(product)
+//    }else{
+//      return 0;
+//    }
+      
+   
+     
+//    }
+//    console.log(product(20,30))
+//    exports.product = product
+
+
+// Question-7
+// Take a number and find the "ans" by sum of sqaure of digits. once you find this "ans" repeat the steps ( I mean find sum of square of digits of ans) and repeat this process until you get 1.
+
+// Eg: 49 => 44 + 99 =>16+81 => 97
+// since 97 is not equal to 1 so we will repeat the steps
+// 97 => 99+77 = 81+49 = 130
+// it is still not 1: so lets repeat
+// 130 => 11 + 33 + 0 => 10 it is still not 1: so lets repeat
+// 10 => 1*1 +0 = 1
+
+// If after certain number of steps finally we get 1 than number is called "CodeSpecial"
+
+// in case if it is not possible to get 1 after any number of steps than lets call that number "SomethingUnusual"
+
+
+
+
+
+// function checkNumber(n){
+//     let counter=1
+//   while(counter<100 && n!=1){
+//      let sum = 0
+//       while(n!=0){
+//          let reminder = n%10
+//          sum=sum+reminder**2
+//           n = Math.floor(n/10)
+      
+//       }
+//     counter++
+//     n=sum
+    
+     
+      
+//   }
+//     if(n==1){
+//     return("CodeSpecial")
+//     }else{
+//     return("SomethingUnusual")
+//    }
+    
+//   }
+
+
+// 
+
+// Write a code to take time in seconds and convert it into hour, mins and seonds
+
+// Input:
+// already given as function parameter
+
+// Output:
+// hour, mins and seconds with a message as in example.
+
+// Eg:
+
+// input:
+// 5000
+
+// Output:
+// In 5000 seconds 1 hours , 23 minutes and 20 seconds are possible
+
+
+// function time(seconds){
+//     let hour=Math.floor(seconds/3600)
+//     let mint=Math.floor((seconds-hour*3600)/60)
+//     let sec=(seconds%60)
+   
+//      hour<=12
+   
+//    return(`In ${seconds} seconds ${hour} hours , ${mint} minutes and ${sec} seconds are possible`)
+    
+       
+     
+//      // return ?
+//    }
+//    console.log(time(5000))
+//    exports.time = time
